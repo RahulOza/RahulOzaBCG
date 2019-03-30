@@ -6,7 +6,7 @@ import sun.nio.fs.WindowsNativeDispatcher
 import java.util.logging.Logger;
 
 
-class BCGTestMainTest {
+class SnapTest {
     final static Logger logger = Logger.getLogger(BCGTestMain.class.getName());
     void setUp() {
         super.setUp()
