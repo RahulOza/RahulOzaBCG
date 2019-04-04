@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 
 
 class SnapTest {
-    final static Logger logger = Logger.getLogger(BCGTestMain.class.getName());
+    final static Logger logger = Logger.getLogger(SnapTest.class.getName());
     void setUp() {
         super.setUp()
     }
