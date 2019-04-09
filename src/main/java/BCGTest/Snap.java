@@ -5,13 +5,15 @@ import Data.Deck;
 import Data.Player;
 
 import java.util.Stack;
-import java.util.logging.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Documentation
  */
 public class Snap {
-    final static Logger logger = Logger.getLogger(Snap.class.getName());
+
+    final static Logger logger = LogManager.getLogger(Snap.class.getName());
 
      private enum matchConditions {MATCH_SUIT, MATCH_VALUE, MATCH_EXACT }
      private matchConditions thisMatch = matchConditions.MATCH_SUIT;
@@ -117,7 +119,9 @@ public class Snap {
         Player player2 = new Player();
         Snap mySnapGame = new Snap();
 
+
         logger.info("snap 2 BySuit");
+
         myInitialDeck.populateDeck();
         myInitialDeck.shuffle();
         logger.info("Deck Shuffled");
